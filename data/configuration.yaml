@@ -1,0 +1,16 @@
+APP:
+  URL_NGROK: https://xxx.ngrok-free.app
+  
+DATABASE:
+    DIMENSION: 1536
+    COLLECTION_NAME: chatbot
+    INDEX_PARAM: {'metric_type':'IP', 'index_type':"HNSW", 'params':{'M': 8, 'efConstruction': 64}}
+    QUERY_PARAM: {'metric_type': 'IP', 'params': {'ef': 64}}
+    PORT: "19530"
+    HOST: "localhost"
+
+OPENAI:
+    OPENAI_ENGINE: text-embedding-ada-002
+    MODEL_ENCODING: p50k_base
+
+  
